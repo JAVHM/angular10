@@ -1,0 +1,26 @@
+<h1 class="p-4 p-lg-2 text-center">Eliminar artículo</h1>
+<div class="p-4 p-lg-5 bg-light rounded-1 text-center">
+    <div class="form-froup row">
+        <label class="col-sm-2 col-form-label">Articulo Código</label>
+        <div class="col-sm-10 ">
+            <input type="text" class="form-control text-center" [(ngModel)]="codArticulo"
+            placeholder="Codigo del articulo">
+        </div>
+    </div>
+</div>
+
+<div class="d-flex justify-content-center p-1">
+    <nav class="navbar navbar-expand-sm bg-light navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <button (click)="deleteClick(codArticulo)" routerLink="/art" 
+          class="m-1 btn btn-light btn-outline-primary">Eliminar</button>
+        </li>
+    
+        <li class="nav-item">
+          <button routerLink="/art"
+          class="m-1 btn btn-light btn-outline-primary">Volver</button>
+        </li>
+      </ul>
+    </nav>
+</div>
